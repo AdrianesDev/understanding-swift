@@ -90,3 +90,13 @@ let numberOfBooksPerBox: Int = 4
 let booksLeft = totalNumberOfBooks % numberOfBooksPerBox
 
 print(booksLeft)
+
+//MARK: - TYPE INFERENCE
+//cuando creas una variable sin tu decirle el tipo de dato que es, swift lo hace automaticamente por ti
+
+let role = "iOS Developer" //esto automaticamente su tipo de dato es un String
+let role2: String = "iOS Developer" //aqui especificamos el tipo de dato que es, en este caso es un string
+
+
+
+
