@@ -112,6 +112,91 @@ let c = +b
 print(c)
 // existen los operadores unitarios con sus postfijos, como por ejemplo cuando haces opcionales
 
+//MARK: - BINARY OPERATORS
+//los operadores binarios operan con dos operandos, y este aparece entre los dos operandos
+
+let suma = 1 + 1
+
+//MARK: - TERNARY OPERATORS
+// el operador ternario opera con 3 operadores, en swift el operador ternario funciona como condicional y es repesentado con estos simbo ? y :
+
+//          TRUE       FALSE
+//   Operando ? Operando : Operando
+
+let isEnabled = true
+let opacity = isEnabled ? 1 : 0
+print(opacity)
+
+//MARK: - COMPARISON OPERATORS
+// los operadores de comparacion comparan dos operandos, despues de hacer la comparacion retornan un boleano true o false
+// existen 6 operadores de comparacion: ==, !=, >=, <=, <, >
+//todos estos operadores retornaran un true o false
+print("igual a")
+print(5 == 5)
+print(5 == 6)
+print("diferente a")
+print(5 != 5)
+print(5 != 6)
+print("menor a")
+print(5 < 5)
+print(5 < 6)
+print("mayor a")
+print(5 > 5)
+print(5 > 6)
+print("mayor o igual a")
+print(5 >= 5)
+print(5 >= 6)
+print("menor o igual a")
+print(5 <= 5)
+print(5 <= 6)
+
+//MARK: - COLLECTION TYPES
+// sirve para guardar colecciones de datos
+//Swift ofrece 3 tipos de colecciones primarias para guardar grupos de valor: Array, Set, Dictionary
+
+//MARK: - ARRAYS
+// Los Arrays es una coleccion de valores ordenados y deben de ser del mismo tipo de dato
+// 0 Titanic   //String
+// 1 Gladiator //String
+// 2 Braveheart //String
+// 3 The Matrix //String
+//La sintaxis del tipo array: Array<Element>
+//Array<String> // Arrays de tipo String
+//Array<Int> // Arrays de tipo Int
+//Array<Bool> // Arrays de tipo Bool
+//Como crear un array en Swift:
+let movies: Array<String> = ["Titanic","Gladiator","Braveheart","The Matrix"]
+let numbers: Array<Int> = [1,2,100,50,75,45,5]
+//Un shorthand para simplificar el array puedes remplazar Arrat<Element> por [Element]
+let moviesShorthand: [String] = ["Titanic","Gladiator","Braveheart","The Matrix"]
+let numbersShorthand: [Int]  = [1,2,100,50,75,45,5]
+// se puede acortar aun mas la sintaxis quitando la notacion
+let moviesWithoutInference = ["Titanic","Gladiator","Braveheart","The Matrix"]
+let numbersWithoutInference = [1,2,100,50,75,45,5]
+
+//para acceder a estos datos debemos de agarrar el nombre de la variable y sobre los brackets [] ponemos el indice del dato que queremos acceder( acordemos que el primer dato inicia en 0, se veria algo como movie[index]
+movies[0]
+movies[1]
+movies[2]
+movies[3]
+
+let stringValues = Array(repeating: "Hello", count: 4)
+print(stringValues)
+let intValues = Array(repeating: 1, count: 4)
+print(intValues)
+
+//MARK: - SET
+// un set es una coleccion desordenada con valores unicos, todos los valores del set deben ser del mismo tipo de dato, los sets y los arrays se pueden parecer, pero no son lo mismo y tienen diferentes propositos, las diferencias mas notorias es que los arrays son colecciones ordenadas y los sets son colecciones desordenadas y contienen un unico valor, con unico valor se refiere a que no puede haber elementos duplicados.
+
+//La sintaxis de los sets contienen la palabra Set y el elemento Set<Element>
+//Set<String> // set de tipo String
+//Set<Double> // set de tipo Double
+//Set<Int> // set de tipo Int
+let cars: Set<String> = ["Tesla","Bmw","Audi","Porshe","Tesla"]
+print(cars)
+let values: Set<Double> = [100.5,200.7,300.5,100.0]
+print(values)
+
 
 
 
