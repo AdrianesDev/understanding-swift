@@ -97,6 +97,21 @@ print(booksLeft)
 let role = "iOS Developer" //esto automaticamente su tipo de dato es un String
 let role2: String = "iOS Developer" //aqui especificamos el tipo de dato que es, en este caso es un string
 
+//MARK: - TYPE ANNOTATIONS
+// En este caso es cuando tu le especificas el tipo de notacion que tendra tu variable
+var age:Int = 25
+let score:Double = 95.36
+let hasJoinedLACWE:Bool = true
+
+//MARK: - UNARY OPERATORS
+// los operadores unitarios aparecen antes de los operadores como un prefijo
+let a = 100
+let b = -a
+print(b)
+let c = +b
+print(c)
+// existen los operadores unitarios con sus postfijos, como por ejemplo cuando haces opcionales
+
 
 
 
